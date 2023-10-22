@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" prefHeight="600.0" prefWidth="800.0" styleClass="root" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPanelController">
+   <bottom>
+      <VBox prefHeight="60.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="botbar" stylesheets="@styling.css">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="previousPanel" disable="true" mnemonicParsing="false" onAction="#switchToPreviousPanel" styleClass="controlButton" stylesheets="@styling.css" text="&lt;" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="25.0" stylesheets="@styling.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="nextPanel" disable="true" mnemonicParsing="false" onAction="#switchToNextPanel" styleClass="controlButton" stylesheets="@styling.css" text="&gt;">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="42.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="41.0" prefWidth="600.0" spacing="10.0" styleClass="topbar" stylesheets="@styling.css">
+               <children>
+                  <HBox prefHeight="32.0" prefWidth="521.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#openInformationTab" styleClass="controlButton" stylesheets="@styling.css" text="Help" />
+                        <Label fx:id="dateRangeLabel" prefHeight="38.0" prefWidth="283.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="32.0" prefWidth="561.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <DatePicker fx:id="datePickerLower" editable="false" onAction="#handleDatePicker" prefHeight="25.0" prefWidth="150.0" promptText="From" stylesheets="@styling.css">
+                           <HBox.margin>
+                              <Insets bottom="7.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                        <DatePicker fx:id="datePickerUpper" editable="false" onAction="#handleDatePicker" prefHeight="25.0" prefWidth="150.0" promptText="To">
+                           <HBox.margin>
+                              <Insets bottom="7.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+      </VBox>
+   </top>
+   <opaqueInsets>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </opaqueInsets>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

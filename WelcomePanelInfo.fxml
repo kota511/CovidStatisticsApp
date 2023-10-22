@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="TOP_CENTER" prefHeight="97.0" prefWidth="365.0" stylesheets="@styling.css" text="Select the period you would like data for using the drop-down boxes at the top corner of the screen." wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="29.0" fitWidth="263.0">
+         <image>
+            <Image url="@date_pick.png" />
+         </image>
+      </ImageView>
+      <Label prefHeight="92.0" prefWidth="365.0" stylesheets="@styling.css" text="Use the arrows at the bottom corners of the screen to move through the different panels." wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+      <ImageView>
+         <image>
+            <Image url="@panel_navigate.png" />
+         </image>
+      </ImageView>
+   </children>
+</VBox>

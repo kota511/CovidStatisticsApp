@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="TOP_CENTER" prefHeight="54.0" prefWidth="367.0" stylesheets="@styling.css" text="Click the top bar to switch between the different statistics." wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="32.0" fitWidth="263.0">
+         <image>
+            <Image url="@different_tabs.png" />
+         </image>
+      </ImageView>
+      <Label prefHeight="65.0" prefWidth="367.0" text="Select the boroughs you would like to produce a graph for." wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="28.0" fitWidth="83.0">
+         <image>
+            <Image url="@borough_selection.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="29.0">
+         <image>
+            <Image url="@panel_navigator.png" />
+         </image>
+      </ImageView>
+   </children>
+</VBox>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="287.0" prefWidth="468.0" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="TOP_CENTER" prefHeight="22.0" prefWidth="419.0" stylesheets="@styling.css" text="The Statistics panel shows: " textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+      <Label prefHeight="22.0" prefWidth="363.0" text="- Total number of deaths" wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+      <Label prefHeight="22.0" prefWidth="360.0" text="- Average of total cases" wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+      <Label prefHeight="22.0" prefWidth="359.0" text="- Date with the highest number of deaths," wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+      <Label prefHeight="22.0" prefWidth="359.0" text="- Average change in workspace traffic" wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+      <Label prefHeight="22.0" prefWidth="359.0" text="- Average change in grocery and pharmacy traffic" wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+      <Label prefHeight="17.0" prefWidth="333.0" />
+      <Label text="Use the buttons to switch between the different statistics. ">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

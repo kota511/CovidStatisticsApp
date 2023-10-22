@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="TOP_CENTER" prefHeight="107.0" prefWidth="365.0" stylesheets="@styling.css" text="Click on the different boroughs to display the data for that borough. The boroughs have been colour-coded to the number of deaths that have occured." wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+      <Label prefHeight="17.0" prefWidth="175.0" />
+      <ImageView fitHeight="77.0" fitWidth="71.0">
+         <image>
+            <Image url="@single_borough.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="29.0">
+         <image>
+            <Image url="@panel_navigator.png" />
+         </image>
+      </ImageView>
+   </children>
+</VBox>

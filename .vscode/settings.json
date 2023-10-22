@@ -1,0 +1,9 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "+libs/commons-lang3-3.7.jar",
+        "+libs/commons-text-1.2.jar",
+        "+libs/opencsv-4.1.jar",
+        "/Users/kotaamemiya/Documents/javalibraries/javafx-sdk-19.0.2.1/lib/**/*.jar"
+    ]
+}

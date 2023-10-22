@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="600.0" stylesheets="@styling.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphPanelController">
+  <tabs>
+      <Tab text="New Deaths">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <BorderPane layoutX="-6.0" layoutY="7.0" prefHeight="360.0" prefWidth="600.0">
+                     <center>
+                        <LineChart prefHeight="568.0" prefWidth="858.0" BorderPane.alignment="CENTER">
+                           <xAxis>
+                              <CategoryAxis animated="false" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </center>
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <MenuButton alignment="CENTER" mnemonicParsing="false" onAction="#boroughSelected" text="Boroughs" textAlignment="CENTER">
+                                 <items>
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Barking And Dagenham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Barnet" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Bexley" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Brent" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Bromley" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Camden" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="City Of London" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Croyden" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Ealing" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Enfield" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Greenwich" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hackney" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hammersmith And Fulham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Haringey" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Harrow" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Havering" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hillingdon" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hounslow" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Islington" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Kensington And Chelsea" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Kingston Upon Thames" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Lambeth" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Lewisham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Merton" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Newham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Redbridge" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Richmond Upon Thames" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Southwark" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Sutton" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Tower Hamlets" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Waltham Forest" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Wansworth" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Westminster" />
+                                 </items>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </MenuButton>
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#clear" text="Clear" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </bottom>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+    <Tab text="Total Deaths">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="600.0">
+               <children>
+                  <BorderPane layoutX="-6.0" layoutY="7.0" prefHeight="360.0" prefWidth="600.0">
+                     <center>
+                        <LineChart prefHeight="395.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                           <xAxis>
+                              <CategoryAxis animated="false" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </center>
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <MenuButton alignment="CENTER" mnemonicParsing="false" onAction="#boroughSelected" text="Boroughs" textAlignment="CENTER">
+                                 <items>
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Barking And Dagenham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Barnet" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Bexley" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Brent" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Bromley" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Camden" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="City Of London" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Croyden" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Ealing" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Enfield" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Greenwich" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hackney" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hammersmith And Fulham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Haringey" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Harrow" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Havering" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hillingdon" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hounslow" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Islington" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Kensington And Chelsea" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Kingston Upon Thames" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Lambeth" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Lewisham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Merton" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Newham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Redbridge" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Richmond Upon Thames" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Southwark" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Sutton" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Tower Hamlets" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Waltham Forest" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Wansworth" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Westminster" />
+                                 </items>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </MenuButton>
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#clear" text="Clear" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </bottom>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </content></Tab>
+    <Tab text="New Cases">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="600.0">
+               <children>
+                  <BorderPane layoutX="-6.0" layoutY="7.0" prefHeight="360.0" prefWidth="600.0">
+                     <center>
+                        <LineChart prefHeight="395.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                          <xAxis>
+                            <CategoryAxis animated="false" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </center>
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <MenuButton alignment="CENTER" mnemonicParsing="false" onAction="#boroughSelected" text="Boroughs" textAlignment="CENTER">
+                                 <items>
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Barking And Dagenham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Barnet" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Bexley" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Brent" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Bromley" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Camden" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="City Of London" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Croyden" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Ealing" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Enfield" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Greenwich" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hackney" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hammersmith And Fulham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Haringey" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Harrow" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Havering" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hillingdon" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hounslow" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Islington" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Kensington And Chelsea" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Kingston Upon Thames" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Lambeth" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Lewisham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Merton" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Newham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Redbridge" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Richmond Upon Thames" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Southwark" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Sutton" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Tower Hamlets" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Waltham Forest" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Wansworth" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Westminster" />
+                                 </items>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </MenuButton>
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#clear" text="Clear" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </bottom>
+                  </BorderPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Total Cases">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="600.0">
+               <children>
+                  <BorderPane layoutX="-6.0" layoutY="7.0" prefHeight="360.0" prefWidth="600.0">
+                     <center>
+                        <LineChart prefHeight="395.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                           <xAxis>
+                              <CategoryAxis animated="false" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </center>
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="BOTTOM_LEFT">
+                           <children>
+                              <MenuButton alignment="CENTER" mnemonicParsing="false" onAction="#boroughSelected" text="Boroughs" textAlignment="CENTER">
+                                 <items>
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Barking And Dagenham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Barnet" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Bexley" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Brent" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Bromley" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Camden" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="City Of London" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Croyden" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Ealing" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Enfield" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Greenwich" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hackney" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hammersmith And Fulham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Haringey" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Harrow" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Havering" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hillingdon" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Hounslow" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Islington" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Kensington And Chelsea" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Kingston Upon Thames" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Lambeth" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Lewisham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Merton" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Newham" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Redbridge" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Richmond Upon Thames" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Southwark" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Sutton" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Tower Hamlets" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Waltham Forest" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Wansworth" />
+                                    <CheckMenuItem mnemonicParsing="false" onAction="#boroughSelected" text="Westminster" />
+                                 </items>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </MenuButton>
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#clear" text="Clear" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </bottom>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

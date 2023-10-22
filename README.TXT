@@ -1,0 +1,3 @@
+PROJECT TITLE: Covid Statistics Explorer (Nickname CovidStats)
+PURPOSE OF PROJECT: The purpose of this project is to provide a way to navigate through various pages of statistics for covid for various dates for all london boroughs
+HOW TO START THIS PROJECT: The way to run this is to change the module path in launch.json to the path to your javafx library. Run the start method in the app.java file, running the main method in app.java file.
